@@ -1,4 +1,4 @@
-# Greeter
+# Convergence Greeter
 
 [![Translation status](https://l10n.elementary.io/widgets/desktop/-/greeter/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/?utm_source=widget)
 
