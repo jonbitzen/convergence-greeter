@@ -1,0 +1,34 @@
+OK, so lets think about our approach here.
+
+I think we're going to create a new type of card - GamerCard.  The GamerCard is going to be gamepad friendly.  
+- It doesn't rush to log you in if you're a nopasswdlogin user
+- If you hit X it logs you in
+- If you hit Y it brings up the session menu
+  - The user's session is shown to the right of their name with a session icon, like Slick Greeter
+  - pressing up or down on the right stick or D-pad changes the selected user session
+  - pressing X selects the currently-highlighted user session
+  - pressing B dismisses the session menu without changing the selection
+  * defer this functionality for now - I'd just like to get something useful working
+
+
+Using the "back" button reveals the non-GamerCard users  The "back" button is a toggle to shuffle
+the non GamerCard users in or out of the user list.  Non-GamerCard users are presented with a regular UserCard.
+* for now just reveal all the non-GamerCard users
+
+The "start" button brings up the Restart/Shutdown menu, like in Slick Greeter.
+- Left joystick or D-pad {Left, Right} changes between the options
+- Pressing the X button activates the currently selected option
+- pressing the "start" button again, or the "B" button dismisses the menu with no action taken
+* defer for now; we can shutdown from within Steam for the time being
+
+--------------------------------------------
+
+So, now that I have a sort of serious plan, I think I should take proper measures on this thing.  
+
+So, lets checkout 5.0.4.  Delete everything.  Rename the project.  Add something to the README.md to acknowledge
+elementary OS and the original authors as an upstream fork.
+
+Then start coding this like I mean it.  So we'll get that code in to check for nopasswdlogin users, and create
+a GamerCard, initially the same as the other user cards.  But we'll dump a message so we know we loaded the other
+type of card.
+
