@@ -58,8 +58,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
 
         set_visual (get_screen ().get_rgba_visual ());
 
-        var guest_login_button = new Gtk.Button.with_label (_("Log in as Guest"));
-
         var extra_login_grid = new Gtk.Grid ();
         extra_login_grid.halign = Gtk.Align.CENTER;
         extra_login_grid.valign = Gtk.Align.END;
@@ -72,7 +70,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
             gtksettings.gtk_theme_name = "elementary";
 
             var css_provider = Gtk.CssProvider.get_named (gtksettings.gtk_theme_name, "dark");
-            guest_login_button.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
         } catch (Error e) {}
 
         datetime_widget = new Greeter.DateTimeWidget ();
@@ -114,14 +111,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
             return false;
         });
 
-        guest_login_button.clicked.connect (() => {
-            try {
-                lightdm_greeter.authenticate_as_guest ();
-            } catch (Error e) {
-                critical (e.message);
-            }
-        });
-
         GLib.ActionEntry entries[] = {
             GLib.ActionEntry () {
                 name = "previous",
@@ -143,13 +132,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         lightdm_greeter.show_message.connect (show_message);
         lightdm_greeter.show_prompt.connect (show_prompt);
         lightdm_greeter.authentication_complete.connect (authentication_complete);
-
-        lightdm_greeter.notify["has-guest-account-hint"].connect (() => {
-            if (lightdm_greeter.has_guest_account_hint && guest_login_button.parent == null) {
-                extra_login_grid.attach (guest_login_button, 0, 0);
-                guest_login_button.show ();
-            }
-        });
 
         notify["scale-factor"].connect (() => {
             maximize_window ();
