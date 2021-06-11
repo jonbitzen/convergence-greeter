@@ -1,5 +1,12 @@
 #!/bin/bash
 
-cd /home/jrailsback/Documents/pantheon-greeter/build
+# get the project directory so we can go to it to build
+FQ_SCRIPT_PATH=$(realpath $0)
+SCRIPT_DIR=$(dirname ${FQ_SCRIPT_PATH})
+PROJECT_DIR=$(dirname ${SCRIPT_DIR})
+
+# enter the project directory, run a build, then go back
+pushd ${PROJECT_DIR}/build
 ninja
 sudo ninja install
+popd
