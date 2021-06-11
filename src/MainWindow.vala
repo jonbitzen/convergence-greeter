@@ -29,7 +29,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
     private Gtk.Overlay main_overlay;
     private LightDM.Greeter lightdm_greeter;
     private Greeter.Settings settings;
-    private Gtk.ToggleButton manual_login_button;
     private Greeter.DateTimeWidget datetime_widget;
     private unowned Greeter.BaseCard current_card;
     private unowned LightDM.UserList lightdm_user_list;
@@ -61,8 +60,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
 
         var guest_login_button = new Gtk.Button.with_label (_("Log in as Guest"));
 
-        manual_login_button = new Gtk.ToggleButton.with_label (_("Manual Login…"));
-
         var extra_login_grid = new Gtk.Grid ();
         extra_login_grid.halign = Gtk.Align.CENTER;
         extra_login_grid.valign = Gtk.Align.END;
@@ -76,7 +73,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
 
             var css_provider = Gtk.CssProvider.get_named (gtksettings.gtk_theme_name, "dark");
             guest_login_button.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-            manual_login_button.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
         } catch (Error e) {}
 
         datetime_widget = new Greeter.DateTimeWidget ();
@@ -118,36 +114,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
             return false;
         });
 
-        manual_login_button.bind_property ("active", manual_card, "reveal-child", GLib.BindingFlags.SYNC_CREATE);
-        manual_login_button.toggled.connect (() => {
-            if (manual_login_button.active) {
-                if (lightdm_greeter.in_authentication) {
-                    try {
-                        lightdm_greeter.cancel_authentication ();
-                    } catch (Error e) {
-                        critical (e.message);
-                    }
-                }
-
-                current_card = manual_card;
-            } else {
-                if (lightdm_greeter.in_authentication) {
-                    try {
-                        lightdm_greeter.cancel_authentication ();
-                    } catch (Error e) {
-                        critical (e.message);
-                    }
-                }
-
-                current_card = user_cards.peek_nth (index_delta);
-                try {
-                    lightdm_greeter.authenticate (((UserCard) current_card).lightdm_user.name);
-                } catch (Error e) {
-                    critical (e.message);
-                }
-            }
-        });
-
         guest_login_button.clicked.connect (() => {
             try {
                 lightdm_greeter.authenticate_as_guest ();
@@ -184,16 +150,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
                 guest_login_button.show ();
             }
         });
-
-        lightdm_greeter.notify["show-manual-login-hint"].connect (() => {
-            if (lightdm_greeter.show_manual_login_hint && manual_login_button.parent == null) {
-                extra_login_grid.attach (manual_login_button, 1, 0);
-                manual_login_button.show ();
-            }
-        });
-
-        lightdm_greeter.bind_property ("hide-users-hint", manual_login_button, "sensitive", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.INVERT_BOOLEAN);
-        lightdm_greeter.bind_property ("hide-users-hint", manual_login_button, "active", GLib.BindingFlags.SYNC_CREATE);
 
         notify["scale-factor"].connect (() => {
             maximize_window ();
@@ -488,7 +444,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
     private void add_card (LightDM.User lightdm_user) {
         var user_card = new Greeter.UserCard (lightdm_user);
         user_card.show_all ();
-        manual_login_button.bind_property ("active", user_card, "reveal-child", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.INVERT_BOOLEAN);
         main_overlay.add_overlay (user_card);
         user_card.focus_requested.connect (() => {
             switch_to_card (user_card);
