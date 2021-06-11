@@ -77,11 +77,8 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
 
         user_cards = new GLib.Queue<unowned Greeter.UserCard> ();
 
-        var manual_card = new Greeter.ManualCard ();
-
         main_overlay = new Gtk.Overlay ();
         main_overlay.vexpand = true;
-        main_overlay.add_overlay (manual_card);
 
         var main_grid = new Gtk.Grid ();
         main_grid.margin_top = main_grid.margin_bottom = 24;
@@ -124,7 +121,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
 
         card_size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
         card_size_group.add_widget (extra_login_grid);
-        card_size_group.add_widget (manual_card);
 
         add_action_entries (entries, this);
 
@@ -141,9 +137,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         lightdm_user_list.user_added.connect (() => {
             load_users.begin ();
         });
-
-        manual_card.do_connect_username.connect (do_connect_username);
-        manual_card.do_connect.connect (do_connect);
 
         key_press_event.connect ((event) => {
             // arrow key is being used to navigate
@@ -307,13 +300,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         had_prompt = true;
 
         current_login.show_prompt (type, prompttext, text);*/
-        if (current_card is ManualCard) {
-            if (type == LightDM.PromptType.SECRET) {
-                ((ManualCard) current_card).ask_password ();
-            } else {
-                ((ManualCard) current_card).wrong_username ();
-            }
-        }
     }
 
     // Called after the credentials are checked, might be authenticated or not.
@@ -363,9 +349,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         } catch (Error e) {
             critical (e.message);
         }
-
-        lightdm_greeter.notify_property ("show-manual-login-hint");
-        lightdm_greeter.notify_property ("has-guest-account-hint");
 
         if (lightdm_greeter.default_session_hint != null) {
             get_action_group ("session").activate_action ("select", new GLib.Variant.string (lightdm_greeter.default_session_hint));
