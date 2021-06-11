@@ -51,7 +51,7 @@ Probably the most productive way to iterate on changes to the greeter is to run 
 - Share the convergence greeter source folder from your host machine to your guest OS in VirtualBox.  There is an option for this in the VirtualBox UI.
 - On the guest OS, run the command `sudo usermod -aG vboxsf $(whoami)`.  This will give you write permissions to the shared host folder while working on the guest OS.  You may need to log out and back in again for this setting to take effect.
 
-Once the folder is shared and accessible from the guest, you can follow the build instructions with the convergence-greeter to build the greeter on the guest OS.  You can install your IDE of choice on the host and edit from there, but rebuild and restart the greeter over a terminal from the host machine.  See the convenience scripts contained the `test` directory:
+Once the folder is shared and accessible from the guest, you can follow the build instructions with the convergence-greeter to build the greeter on the guest OS.  You can install your IDE of choice on the host and edit from there, but rebuild and restart the greeter on the guest using a terminal from the host machine.  See the convenience scripts contained the `test` directory:
 
 - rebuild: rebuilds from source and installs the newly built greeter
 - restart: kills the current convergence-greeter, which causes an automatic restart
