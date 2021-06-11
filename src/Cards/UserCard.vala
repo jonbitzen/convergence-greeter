@@ -35,7 +35,6 @@ public class Greeter.UserCard : Greeter.BaseCard {
     public int sleep_inactive_battery_type { get; set; default = 1; }
 
     private Act.User act_user;
-    private Pantheon.AccountsService greeter_act;
     private Gtk.Revealer form_revealer;
     private Gtk.Stack login_stack;
     private weak Gtk.StyleContext main_grid_style_context;
@@ -239,33 +238,6 @@ public class Greeter.UserCard : Greeter.BaseCard {
     private void on_act_user_loaded () {
         if (!act_user.is_loaded) {
             return;
-        }
-
-        unowned string? act_path = act_user.get_object_path ();
-        if (act_path != null) {
-            try {
-                greeter_act = GLib.Bus.get_proxy_sync (GLib.BusType.SYSTEM,
-                                                       "org.freedesktop.Accounts",
-                                                       act_path,
-                                                       GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-                is_24h = greeter_act.time_format != "12h";
-                sleep_inactive_ac_timeout = greeter_act.sleep_inactive_ac_timeout;
-                sleep_inactive_ac_type = greeter_act.sleep_inactive_ac_type;
-                sleep_inactive_battery_timeout = greeter_act.sleep_inactive_battery_timeout;
-                sleep_inactive_battery_type = greeter_act.sleep_inactive_battery_type;
-                ((GLib.DBusProxy) greeter_act).g_properties_changed.connect ((changed_properties, invalidated_properties) => {
-                    string time_format;
-                    changed_properties.lookup ("TimeFormat", "s", out time_format);
-                    is_24h = time_format != "12h";
-
-                    changed_properties.lookup ("SleepInactiveACTimeout", "i", out _sleep_inactive_ac_timeout);
-                    changed_properties.lookup ("SleepInactiveACType", "i", out _sleep_inactive_ac_type);
-                    changed_properties.lookup ("SleepInactiveBatteryTimeout", "i", out _sleep_inactive_battery_timeout);
-                    changed_properties.lookup ("SleepInactiveBatteryType", "i", out _sleep_inactive_battery_type);
-                });
-            } catch (Error e) {
-                critical (e.message);
-            }
         }
 
         if (act_user.locked) {
