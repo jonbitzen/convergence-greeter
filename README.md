@@ -57,6 +57,6 @@ Once the folder is shared and accessible from the guest, you can follow the buil
 - restart: kills the current convergence-greeter, which causes an automatic restart
 - set-greeter: allows commands for "test" to set the convergence-greeter as the default greeter, or "slick-greeter" to restore the default greeter
 
-It may be off additional assistance to setup passwordless sudo on the guest OS, and to setup passwordless ssh from the host to the guest.  Also remember that you can checkpoint the guest OS easily, to create convenient restore points if some change made while working on the greeter disables the OS.
+It may be of additional assistance to setup passwordless sudo on the guest OS, and to setup passwordless ssh from the host to the guest.  Also remember that you can checkpoint the guest OS easily, to create convenient restore points if some change made while working on the greeter disables the OS.
 
 
