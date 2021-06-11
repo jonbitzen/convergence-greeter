@@ -1,0 +1,135 @@
+# Arabic translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2020-05-16 04:10+0000\n"
+"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/greeter/"
+"ar/>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 3.9.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "هل الواجهة تبدو جيدة؟"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "إحتفظ بهذه الإعدادات"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "إسترجع إعدادات الضبط السابقة"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "تسجيل الدخول كضيف"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "تسجيل دخول يدوي…"
+
+#: src/MainWindow.vala:403
+msgid "Unable to Log In"
+msgstr "لا يمكن تسجيل الدخول"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr "فشل في بدء الجلسة."
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "غير قادر على تشغيل التثبيت الاولي"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "تسجيل دخول يدوي"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "جرب اسم المستخدم"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "الدخول"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr ""
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr ""
+
+#: src/Widgets/CapsLockRevealer.vala:70
+#, fuzzy
+msgid "Caps Lock & Num Lock are on"
+msgstr "Caps Lock مفعل"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "Caps Lock مفعل"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+#, fuzzy
+msgid "Num Lock is on"
+msgstr "Caps Lock مفعل"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "كلمة السر"
+
+#~ msgid "Guest session"
+#~ msgstr "الدخول كضيف"
+
+#~ msgid "%l:%M"
+#~ msgstr "%l:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "HighContrast"
+#~ msgstr "تباين عالي"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "لوحة مفاتيح ظاهرة"
+
+#~ msgid "Hibernate"
+#~ msgstr "السبات"
+
+#~ msgid "Restart"
+#~ msgstr "إعادة التشغيل"
+
+#~ msgid "Suspend"
+#~ msgstr "تعليق"
+
+#~ msgid "Shutdown"
+#~ msgstr "إغلاق"
+
+#~ msgid "Login"
+#~ msgstr "تسجيل الدخول"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "\\%x"

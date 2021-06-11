@@ -1,0 +1,191 @@
+# Hebrew translation for pantheon-greeter
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2019-11-27 20:24+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/greeter/"
+"he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.7.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "התצוגה נראית בסדר?"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "להשאיר את התצורה הזאת"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "שחזור התצורה הקודמת"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "כניסה כאורח"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "כניסה ידנית…"
+
+#: src/MainWindow.vala:403
+msgid "Unable to Log In"
+msgstr "לא ניתן להיכנס"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr "הכניסה למערכת נכשלה."
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "לא ניתן להפעיל את ההתקנה הראשונית"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"ההתקנה הראשונית יוצרת את המשתמש הראשון. בלעדיה, לא תהיה לך אפשרות להיכנס "
+"ואולי אף יהיה עליך להתקין את מערכת ההפעלה מחדש."
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "כניסה ידנית"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "שם משתמש"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "ניסיון של שם משתמש"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "כניסה"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "חשבון מושבת"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr "לא ניתן להחליף הפעלה כשהמשתמש ביצע כניסה למערכת"
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "ה־Caps Lock וה־Num Lock פעילים"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "ה־Caps Lock פעיל"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "ה־Num Lock פעיל"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "ססמה"
+
+#~ msgid "Set properties of own user"
+#~ msgstr "הגדרת מאפייני המשתמש העצמי"
+
+#~ msgid "Authentication is required to set one's own greeter properties."
+#~ msgstr "נדרש אימות כדי להגדיר את מאפייני קבלת הפנים של עצמך."
+
+#~ msgid "Get properties of any user"
+#~ msgstr "קבלת מאפיינים על כל משתמש שהוא"
+
+#~ msgid "Authentication is required to get another user's greeter properties."
+#~ msgstr "נדרש אימות כדי לקבל מאפייני קבלת פנים של משתמש אחר."
+
+#~ msgid "Set properties of any user"
+#~ msgstr "הגדרת מאפיינים לכל משתמש שהוא"
+
+#~ msgid "Authentication is required to set another user's greeter properties."
+#~ msgstr "נדרש אימות כדי להגדיר את מאפייני קבלת הפנים למשתמש אחר."
+
+#~ msgid "Swipe your finger"
+#~ msgstr "נא להעביר את האצבע"
+
+#~ msgid "Place your finger"
+#~ msgstr "נא למקם את האצבע"
+
+#~ msgid "Remove your finger and try again."
+#~ msgstr "נא להסיר את האצבע ולנסות שוב."
+
+#~ msgid "Center your finger and try again."
+#~ msgstr "נא למרכז את האצבע ולנסות שוב."
+
+#~ msgid "An unknown error occured"
+#~ msgstr "אירעה שגיאה בלתי ידועה"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "נא להעביר את האצבע שוב"
+
+#~ msgid "Swipe was too short, try again"
+#~ msgstr "ההעברה הייתה מהירה מדי, נא לנסות שוב"
+
+#~ msgid "Your finger was not centered, try swiping your finger again"
+#~ msgstr "האצבע שלך לא הועברה במרכז, נא לנסות להעביר את האצבע שוב"
+
+#~ msgid "Remove your finger, and try swiping your finger again"
+#~ msgstr "נא להרים את האצבע ולנסות להעביר אותה שוב"
+
+#~ msgid "Place your finger on the reader again"
+#~ msgstr "נא להציב את האצבע על הקורא שוב"
+
+#~ msgid "Failed to match fingerprint"
+#~ msgstr "התאמת טביעת האצבע נכשלה"
+
+#~ msgid "Verification timed out"
+#~ msgstr "זמן האימות פג"
+
+#~ msgid "Guest session"
+#~ msgstr "כניסת אורח"
+
+#~ msgid "%A, %B %e"
+#~ msgstr "%A, ה־%B ב%e"
+
+#~ msgid "%l:%M"
+#~ msgstr "%l:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "HighContrast"
+#~ msgstr "ניגודיות גבוהה"
+
+#~ msgid "Restart"
+#~ msgstr "הפעלה מחדש"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "%A, %B %e%v"
+
+#~ msgid "Hibernate"
+#~ msgstr "מצב שינה"
+
+#~ msgid "Suspend"
+#~ msgstr "השהייה"
+
+#~ msgid "Shutdown"
+#~ msgstr "כיבוי המחשב"
+
+#~ msgid "Login"
+#~ msgstr "כניסה למערכת"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "הצגת מקלדת על המסך"

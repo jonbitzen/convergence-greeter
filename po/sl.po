@@ -1,0 +1,174 @@
+# Slovenian translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2019-12-29 05:21+0000\n"
+"Last-Translator: Marko <marko.dolar@gmail.com>\n"
+"Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/"
+"greeter/sl/>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 3.9.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "Ali je slika na zaslonu videti v redu?"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "Ohrani to konfiguracijo"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "Obnovi prejšnjo konfiguracijo"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "Prijavi se kot gost"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "Ročna prijava…"
+
+#: src/MainWindow.vala:403
+msgid "Unable to Log In"
+msgstr "Ni se mogoče prijaviti"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr "Zagon seje je spodletel."
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "Ni mogoče zagnati začetne namestitve"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"Začetna namestitev ustvari prvega uporabnika. Brez njega se ne boste mogli "
+"prijaviti in boste morali verjetno ponovno namestiti operacijski sistem."
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "Ročna prijava"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "Uporabniško ime"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "Poskusite uporabniško ime"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "Prijava"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "Račun onemogočen"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr "Seje ni mogoče zamenjate medtem ko je uporabnik prijavljen"
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "Caps Lock in Num Lock sta vklopljena"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "Caps Lock je vklopljen"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "Num Lock je vklopljen"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "Geslo"
+
+#~ msgid "Swipe your finger"
+#~ msgstr "Poskenirajte prst"
+
+#~ msgid "Place your finger"
+#~ msgstr "Položite prst na bralnik"
+
+#~ msgid "Remove your finger and try again."
+#~ msgstr "Poskusite znova."
+
+#~ msgid "Center your finger and try again."
+#~ msgstr "Položite prst na sredino in poskusite znova."
+
+#~ msgid "An unknown error occured"
+#~ msgstr "Prišlo je do neznane napake"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "Še enkrat poskenirajte prst"
+
+#~ msgid "Swipe was too short, try again"
+#~ msgstr "Prekratek poteg prsta, poskusite znova"
+
+#~ msgid "Your finger was not centered, try swiping your finger again"
+#~ msgstr "Vaš prst ni bil na sredini bralnika, poskusite znova"
+
+#~ msgid "Remove your finger, and try swiping your finger again"
+#~ msgstr "Poskusite znova"
+
+#~ msgid "Place your finger on the reader again"
+#~ msgstr "Poskusite znova"
+
+#~ msgid "Failed to match fingerprint"
+#~ msgstr "Prstni odtis se ne ujema z nobenim shranjenim"
+
+#~ msgid "Verification timed out"
+#~ msgstr "Čas za preverjanje je potekel"
+
+#~ msgid "Guest session"
+#~ msgstr "Seja za gosta"
+
+#~ msgid "%A, %B %e"
+#~ msgstr "%A, %e. %B"
+
+#~ msgid "%l:%M"
+#~ msgstr "%k:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "Login"
+#~ msgstr "Prijava"
+
+#~ msgid "Hibernate"
+#~ msgstr "V mirovanje"
+
+#~ msgid "Suspend"
+#~ msgstr "V pripravljenost"
+
+#~ msgid "HighContrast"
+#~ msgstr "Visok kontrast"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "%A, %e. %B"
+
+#~ msgid "Restart"
+#~ msgstr "Ponovni zagon"
+
+#~ msgid "Shutdown"
+#~ msgstr "Izklop"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "Zaslonska tipkovnica"

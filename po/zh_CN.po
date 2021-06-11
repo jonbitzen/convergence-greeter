@@ -1,0 +1,194 @@
+# Chinese (Simplified) translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2019-10-05 03:23+0000\n"
+"Last-Translator: jheng <jheng@outlook.com>\n"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
+"desktop/greeter/zh_Hans/>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.7.1\n"
+"X-Launchpad-Export-Date: 2017-03-14 06:58+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "显示正常吗？"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "保存当前配置"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "恢复上次配置"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "以访客身份登入"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "手动登录…"
+
+#: src/MainWindow.vala:403
+#, fuzzy
+msgid "Unable to Log In"
+msgstr "无法启动初始化设置"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr ""
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "无法启动初始化设置"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"初始设置将会创建您的第一个账户，若缺少初始账户，您将无法登录并且可能需要重新"
+"安装操作系统。"
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "手动登录"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "用户名"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "试试 username"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "登录"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "账户已禁用"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr "用户处于登入状态时无法更改会话"
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "大写锁定和数字锁定已打开"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "大写锁定已打开"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "数字锁定已打开"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "密码"
+
+#~ msgid "Set properties of own user"
+#~ msgstr "配置个人账户登录界面"
+
+#~ msgid "Authentication is required to set one's own greeter properties."
+#~ msgstr "配置个人账户登录界面需要管理员权限。"
+
+#~ msgid "Get properties of any user"
+#~ msgstr "获取所有账户登录界面配置"
+
+#~ msgid "Authentication is required to get another user's greeter properties."
+#~ msgstr "获取所有账户登录界面配置需要管理员权限。"
+
+#~ msgid "Set properties of any user"
+#~ msgstr "配置所有账户的登录界面"
+
+#~ msgid "Authentication is required to set another user's greeter properties."
+#~ msgstr "配置所有账户的登录界面需要管理员权限。"
+
+#~ msgid "Swipe your finger"
+#~ msgstr "滑动手指"
+
+#~ msgid "Place your finger"
+#~ msgstr "放置手指"
+
+#~ msgid "Remove your finger and try again."
+#~ msgstr "移开您的手指并重试"
+
+#~ msgid "Center your finger and try again."
+#~ msgstr "居中放置手指并重试"
+
+#~ msgid "An unknown error occured"
+#~ msgstr "出现未知错误"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "重新滑动手指"
+
+#~ msgid "Swipe was too short, try again"
+#~ msgstr "滑动距离太短，请重试"
+
+#~ msgid "Your finger was not centered, try swiping your finger again"
+#~ msgstr "手指未居中，请重新滑动"
+
+#, fuzzy
+#~ msgid "Remove your finger, and try swiping your finger again"
+#~ msgstr "移开您的手指并重试"
+
+#, fuzzy
+#~ msgid "Place your finger on the reader again"
+#~ msgstr "移开您的手指并重试"
+
+#~ msgid "Failed to match fingerprint"
+#~ msgstr "指纹匹配失败"
+
+#~ msgid "Verification timed out"
+#~ msgstr "认证超时"
+
+#~ msgid "Guest session"
+#~ msgstr "访客会话"
+
+#~ msgid "%A, %B %e"
+#~ msgstr "%b%e日 %A"
+
+#~ msgid "%l:%M"
+#~ msgstr "%l:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "HighContrast"
+#~ msgstr "高对比度"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "屏幕键盘"
+
+#~ msgid "Hibernate"
+#~ msgstr "休眠"
+
+#~ msgid "Restart"
+#~ msgstr "重启"
+
+#~ msgid "Suspend"
+#~ msgstr "待机"
+
+#~ msgid "Shutdown"
+#~ msgstr "关机"
+
+#~ msgid "Login"
+#~ msgstr "登录"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "%b%e日，%A"

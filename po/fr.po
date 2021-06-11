@@ -1,0 +1,200 @@
+# French translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2019-11-05 20:24+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/desktop/greeter/"
+"fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.7.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "L'affichage semble-t-il correct ?"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "Conserver cette configuration"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "Restaurer la configuration précédente"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "Connexion en tant qu'invité"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "Connexion manuelle…"
+
+#: src/MainWindow.vala:403
+msgid "Unable to Log In"
+msgstr "Impossible de se connecter"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr "Le lancement de la session  a échoué."
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "Impossible de lancer la configuration initiale"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"L'installation initiale créé votre premier utilisateur. Sans cela, vous ne "
+"pourriez pas vous connecter et devriez réinstaller le système d'exploitation."
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "Connexion manuelle"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "Essayer le nom d'utilisateur"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "Connexion"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "Compte désactivé"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr ""
+"La session ne peut pas être modifiée tant que l'utilisateur est connecté"
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "Le verrouillage des majuscules et du pavé numérique est actif"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "Le verrouillage des majuscules est actif"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "Le verrouillage du pavé numérique est actif"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "Mot de passe"
+
+#~ msgid "Set properties of own user"
+#~ msgstr "Définir les propriétés de son propre utilisateur"
+
+#~ msgid "Authentication is required to set one's own greeter properties."
+#~ msgstr ""
+#~ "Une authentification est nécessaire pour définir ses propres propriétés "
+#~ "de Greeter."
+
+#~ msgid "Get properties of any user"
+#~ msgstr "Obtenir les propriétés de n'importe quel utilisateur"
+
+#~ msgid "Authentication is required to get another user's greeter properties."
+#~ msgstr ""
+#~ "Une authentification est nécessaire pour obtenir les propriétés de "
+#~ "Greeter d'un autre utilisateur."
+
+#~ msgid "Set properties of any user"
+#~ msgstr "Définir les propriétés de n'importe quel utilisateur"
+
+#~ msgid "Authentication is required to set another user's greeter properties."
+#~ msgstr ""
+#~ "Une authentification est nécessaire pour définir les propriétés de "
+#~ "Greeter d'un autre utilisateur."
+
+#~ msgid "Swipe your finger"
+#~ msgstr "Glissez votre doigt"
+
+#~ msgid "Place your finger"
+#~ msgstr "Placez votre doigt"
+
+#~ msgid "Remove your finger and try again."
+#~ msgstr "Retirez votre doigt et réessayez."
+
+#~ msgid "Center your finger and try again."
+#~ msgstr "Centrez votre doigt et réessayez."
+
+#~ msgid "An unknown error occured"
+#~ msgstr "Une erreur inconnue est survenue"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "Glissez votre doigt une nouvelle fois"
+
+#~ msgid "Swipe was too short, try again"
+#~ msgstr "Vous n'êtes pas resté assez longtemps, veuillez réessayer"
+
+#~ msgid "Your finger was not centered, try swiping your finger again"
+#~ msgstr ""
+#~ "Votre doigt n'était pas suffisamment au milieu, réessayez de glisser "
+#~ "votre doigt"
+
+#~ msgid "Remove your finger, and try swiping your finger again"
+#~ msgstr "Retirez votre doigt et réessayez"
+
+#~ msgid "Place your finger on the reader again"
+#~ msgstr "Placez à nouveau votre doigt sur le lecteur"
+
+#~ msgid "Failed to match fingerprint"
+#~ msgstr "L'empreinte ne correspond pas"
+
+#~ msgid "Verification timed out"
+#~ msgstr "Délai de vérification expiré"
+
+#~ msgid "Guest session"
+#~ msgstr "Session invité"
+
+#~ msgid "%A, %B %e"
+#~ msgstr "%A %e %B"
+
+#~ msgid "%l:%M"
+#~ msgstr "%k:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "Login"
+#~ msgstr "Connexion"
+
+#~ msgid "HighContrast"
+#~ msgstr "Contraste élevé"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "Clavier Virtuel"
+
+#~ msgid "Hibernate"
+#~ msgstr "Veille prolongée"
+
+#~ msgid "Restart"
+#~ msgstr "Redémarrer"
+
+#~ msgid "Suspend"
+#~ msgstr "Mettre en veille"
+
+#~ msgid "Shutdown"
+#~ msgstr "Éteindre"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "%A %e %B"

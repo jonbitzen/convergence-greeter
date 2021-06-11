@@ -1,0 +1,173 @@
+# Czech translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2020-05-11 19:11+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/greeter/cs/"
+">\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "Vypadá displej dobře?"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "Ponechat toto uspořádání"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "Vrátit se zpět k předchozímu uspořádání"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "Přihlásit se jako host"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "Ruční přihlášení…"
+
+#: src/MainWindow.vala:403
+msgid "Unable to Log In"
+msgstr "Nedaří se přihlásit"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr "Spuštění relace se nezdařilo."
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "Nedaří se spustit prvotní nastavení"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"Prvotní nastavení vytvoří Váš první uživatelský účet. Bez něj se nebudete "
+"moci přihlásit a možná budete muset přeinstalovat systém."
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "Ruční přihlášení"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "Přihlašovací jméno"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "Zkuste přihlašovací jméno"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "Přihlásit se"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "Účet vypnut"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr "Relace nemůže být změněna, pokud je přihlášen uživatel"
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "Caps Lock & Num Lock jsou zapnuté"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "Caps Lock je zapnutý"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "Num Lock je zapnutý"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "Heslo"
+
+#~ msgid "Swipe your finger"
+#~ msgstr "Přejeďte prstem"
+
+#~ msgid "Place your finger"
+#~ msgstr "Umístěte svůj prst"
+
+#~ msgid "Remove your finger and try again."
+#~ msgstr "Odejměte prst a zkuste to znovu."
+
+#~ msgid "Center your finger and try again."
+#~ msgstr "Položte svůj prst doprostřed a zkuste to znovu."
+
+#~ msgid "An unknown error occured"
+#~ msgstr "Vyskytla se neznámá chyba"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "Znovu přejeďte prstem"
+
+#~ msgid "Swipe was too short, try again"
+#~ msgstr "Přejetí bylo příliš krátké, zkuste to znovu"
+
+#~ msgid "Your finger was not centered, try swiping your finger again"
+#~ msgstr "Váš prst nebyl umístěn uprostřed, zkuste přetáhnout prstem znovu"
+
+#~ msgid "Remove your finger, and try swiping your finger again"
+#~ msgstr "Odejměte prst a zkuste přetáhnout prstem znovu"
+
+#~ msgid "Place your finger on the reader again"
+#~ msgstr "Položte svůj prst na čtečku znovu"
+
+#~ msgid "Failed to match fingerprint"
+#~ msgstr "Nelze spárovat otisk prstu"
+
+#~ msgid "Verification timed out"
+#~ msgstr "Vypršel čas pro ověření"
+
+#~ msgid "Guest session"
+#~ msgstr "Sezení hosta"
+
+#~ msgid "%A, %B %e"
+#~ msgstr "%A, %e. %B"
+
+#~ msgid "%l:%M"
+#~ msgstr "%l:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "HighContrast"
+#~ msgstr "Vysoký kontrast"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "Klávesnice na obrazovce"
+
+#~ msgid "Hibernate"
+#~ msgstr "Uspat na disk"
+
+#~ msgid "Restart"
+#~ msgstr "Restartovat"
+
+#~ msgid "Suspend"
+#~ msgstr "Uspat do paměti"
+
+#~ msgid "Shutdown"
+#~ msgstr "Vypnout"
+
+#~ msgid "Login"
+#~ msgstr "Přihlásit se"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "%A, %e. %B"

@@ -1,0 +1,171 @@
+# Chinese (Traditional) translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2019-05-22 09:03+0000\n"
+"Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
+"desktop/greeter/zh_Hant/>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.6.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "顯示看起來 OK 嗎？"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "保留此設定"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "恢復先前設定"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "以訪客身份登入"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "手動登入…"
+
+#: src/MainWindow.vala:403
+#, fuzzy
+msgid "Unable to Log In"
+msgstr "無法啟動初始設定程式"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr ""
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "無法啟動初始設定程式"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"初始設定程式建立您的第一個使用者。若無進行初始設定，您將會無法登入而且可能需"
+"要重新安裝作業系統。"
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "手動登入"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "使用者名稱"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr ""
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "登入"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "帳號已停用"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr ""
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "Caps Lock 與 Num Lock 已啟用"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "Caps Lock 已啟用"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "Num Lock 已啟用"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "密碼"
+
+#~ msgid "Swipe your finger"
+#~ msgstr "滑動您的手指"
+
+#~ msgid "Place your finger"
+#~ msgstr "放置您的手指"
+
+#~ msgid "Remove your finger and try again."
+#~ msgstr "移除您的手指並重試。"
+
+#~ msgid "Center your finger and try again."
+#~ msgstr "將您的手指置中並重試。"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "再次滑動您的手指"
+
+#~ msgid "Swipe was too short, try again"
+#~ msgstr "滑動幅度太小，請再試一次"
+
+#~ msgid "Your finger was not centered, try swiping your finger again"
+#~ msgstr "您的手指並未置中，請嘗試再次滑動您的手指"
+
+#~ msgid "Remove your finger, and try swiping your finger again"
+#~ msgstr "請移開您的手指，並再試著滑動一次"
+
+#~ msgid "Place your finger on the reader again"
+#~ msgstr "請將您的手指再次放到讀取器上"
+
+#~ msgid "Failed to match fingerprint"
+#~ msgstr "指紋比對失敗"
+
+#~ msgid "Verification timed out"
+#~ msgstr "查核時間已結束"
+
+#~ msgid "Guest session"
+#~ msgstr "訪客作業階段"
+
+#~ msgid "%A, %B %e"
+#~ msgstr "%b%e日%A"
+
+#~ msgid "%l:%M"
+#~ msgstr "%l:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "Login"
+#~ msgstr "登入"
+
+#~ msgid "HighContrast"
+#~ msgstr "高對比"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "螢幕小鍵盤"
+
+#~ msgid "Hibernate"
+#~ msgstr "休眠"
+
+#~ msgid "Restart"
+#~ msgstr "重新啟動"
+
+#~ msgid "Suspend"
+#~ msgstr "待命"
+
+#~ msgid "Shutdown"
+#~ msgstr "關機"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "%b%e日 %A"

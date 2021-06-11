@@ -1,0 +1,197 @@
+# Turkish translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2019-11-03 00:24+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/greeter/"
+"tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.7.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "Ekran iyi görünüyor mu?"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "Bu Yapılandırmayı Koru"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "Önceki Yapılandırmayı Geri Yükle"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "Konuk Olarak Oturum Aç"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "El İle Oturum Aç…"
+
+#: src/MainWindow.vala:403
+msgid "Unable to Log In"
+msgstr "Oturum Açılamıyor"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr "Oturumu başlatmak başarısız oldu."
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "İlk Kurulum Başlatılamadı"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"İlk Kurulum, ilk kullanıcınızı oluşturur. Bu olmadan oturum açamazsınız ve "
+"işletim sistemini yeniden kurmanız gerekebilir."
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "El İle Oturum Aç"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "Kullanıcı adı"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "Kullanıcı adı dene"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "Oturum Aç"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "Hesap devre dışı bırakıldı"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr "Kullanıcı oturumu açıkken oturum değiştirilemez"
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "Caps Lock ve Num Lock açık"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "Caps Lock açık"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "Num Lock açık"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "Parola"
+
+#~ msgid "Set properties of own user"
+#~ msgstr "Kullanıcı özelliklerinizi ayarlayın"
+
+#~ msgid "Authentication is required to set one's own greeter properties."
+#~ msgstr ""
+#~ "Kullanıcı greeter özelliklerinizi ayarlayabilmek için kimliğinizi "
+#~ "doğrulamanız gerekiyor."
+
+#~ msgid "Get properties of any user"
+#~ msgstr "Herhangi bir kullanıcının özelliklerini alın"
+
+#~ msgid "Authentication is required to get another user's greeter properties."
+#~ msgstr ""
+#~ "Başka bir kullanıcının greeter özelliklerini almak için kimlik doğrulama "
+#~ "gerekiyor."
+
+#~ msgid "Set properties of any user"
+#~ msgstr "Herhangi bir kullanıcının özelliklerini ayarlayın"
+
+#~ msgid "Authentication is required to set another user's greeter properties."
+#~ msgstr ""
+#~ "Başka bir kullanıcının greeter özelliklerini ayarlamak için kimlik "
+#~ "doğrulama gerekiyor."
+
+#~ msgid "Swipe your finger"
+#~ msgstr "Parmağınızı sürükleyin"
+
+#~ msgid "Place your finger"
+#~ msgstr "Parmağınızı yerleştirin"
+
+#~ msgid "Remove your finger and try again."
+#~ msgstr "Parmağınızı kaldırın ve tekrar deneyin."
+
+#~ msgid "Center your finger and try again."
+#~ msgstr "Parmağınızı ortalayın ve tekrar deneyin."
+
+#~ msgid "An unknown error occured"
+#~ msgstr "Bilinmeyen bir hata oluştu"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "Parmağınızı tekrar sürükleyin"
+
+#~ msgid "Swipe was too short, try again"
+#~ msgstr "Kaydırma çok kısaydı, tekrar deneyin"
+
+#~ msgid "Your finger was not centered, try swiping your finger again"
+#~ msgstr "Parmağınız ortalanmamıştı, parmağınızı tekrar kaydırın"
+
+#~ msgid "Remove your finger, and try swiping your finger again"
+#~ msgstr "Parmağınızı kaldırın ve tekrar kaydırmayı deneyin"
+
+#~ msgid "Place your finger on the reader again"
+#~ msgstr "Parmağınızı tekrar okuyucunun üzerine yerleştirin"
+
+#~ msgid "Failed to match fingerprint"
+#~ msgstr "Parmak izi eşleşmedi"
+
+#~ msgid "Verification timed out"
+#~ msgstr "Doğrulama zaman aşımına uğradı"
+
+#~ msgid "Guest session"
+#~ msgstr "Misafir oturumu"
+
+#~ msgid "%A, %B %e"
+#~ msgstr "%A, %B %e"
+
+#~ msgid "%l:%M"
+#~ msgstr "%l:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "Login"
+#~ msgstr "Oturum Aç"
+
+#~ msgid "Suspend"
+#~ msgstr "Askıya Al"
+
+#~ msgid "HighContrast"
+#~ msgstr "Yüksek Karşıtlık"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "Ekran Klavyesi"
+
+#~ msgid "Hibernate"
+#~ msgstr "Hazırda Beklet"
+
+#~ msgid "Restart"
+#~ msgstr "Yeniden Başlat"
+
+#~ msgid "Shutdown"
+#~ msgstr "Kapat"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "%A, %B %e%v"

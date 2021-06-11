@@ -1,0 +1,173 @@
+# Marathi translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2019-11-18 15:24+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/greeter/"
+"mr/>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.7.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "डिस्प्ले ठीक दिसत आहे का?"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "हे कॉन्फिगरेशन ठेवा"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "मागील कॉन्फिगरेशन पुनर्संचयित करा"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "अतिथी म्हणून लॉग इन करा"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "मॅन्युअल लॉग इन…"
+
+#: src/MainWindow.vala:403
+msgid "Unable to Log In"
+msgstr "लॉग इन करण्यात अक्षम"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr "सत्र प्रारंभ करणे अयशस्वी झाले."
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "आरंभिक सेटअप सुरू करण्यात अक्षम"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"आरंभिक सेटअप आपला प्रथम वापरकर्ता तयार करतो. त्याशिवाय, आपण लॉग इन करण्यास सक्षम "
+"असणार नाही आणि ओएस पुन्हा स्थापित करण्याची आवश्यकता असू शकते."
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "मॅन्युअल लॉग इन"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "वापरकर्तानाव(युजरनेम)"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "वापरकर्तानाव वापरुन पहा"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "लॉग इन"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "खाते अक्षम"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr "वापरकर्ता लॉग इन असताना सत्र बदलले जाऊ शकत नाही"
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "कॅप्स लॉक आणि नेम लॉक चालू आहेत"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "कॅप्स लॉक चालू आहे"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "नेम लॉक चालू आहे"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "पासवर्ड"
+
+#~ msgid "Set properties of own user"
+#~ msgstr "स्वत: च्या वापरकर्त्याचे गुणधर्म सेट करा"
+
+#~ msgid "Authentication is required to set one's own greeter properties."
+#~ msgstr "स्वतःची ग्रेटर गुणधर्म सेट करण्यासाठी प्रमाणीकरण आवश्यक आहे."
+
+#~ msgid "Get properties of any user"
+#~ msgstr "कोणत्याही वापरकर्त्याचे गुणधर्म मिळवा"
+
+#~ msgid "Authentication is required to get another user's greeter properties."
+#~ msgstr "दुसर्या वापरकर्त्याचे ग्रेटर गुणधर्म मिळविण्यासाठी प्रमाणीकरण आवश्यक आहे."
+
+#~ msgid "Set properties of any user"
+#~ msgstr "कोणत्याही वापरकर्त्याचे गुणधर्म सेट करा"
+
+#~ msgid "Authentication is required to set another user's greeter properties."
+#~ msgstr "दुसर्या वापरकर्त्याचे ग्रेटर गुणधर्म सेट करण्यासाठी प्रमाणीकरण आवश्यक आहे."
+
+#~ msgid "Swipe your finger"
+#~ msgstr "आपल्या बोटाने स्वाइप करा"
+
+#~ msgid "Place your finger"
+#~ msgstr "आपले बोट ठेवा"
+
+#~ msgid "Remove your finger and try again."
+#~ msgstr "आपली बोट काढून टाका आणि पुन्हा प्रयत्न करा."
+
+#~ msgid "Center your finger and try again."
+#~ msgstr "आपले बोट केंद्रीत करा आणि पुन्हा प्रयत्न करा."
+
+#~ msgid "An unknown error occured"
+#~ msgstr "एक अज्ञात त्रुटी आली"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "पुन्हा आपल्या बोटाने स्वाइप करा"
+
+#~ msgid "Swipe was too short, try again"
+#~ msgstr "स्वाइप खूप लहान होता, पुन्हा प्रयत्न करा"
+
+#~ msgid "Your finger was not centered, try swiping your finger again"
+#~ msgstr "आपले बोट केंद्रित केलेले नाही, पुन्हा आपले बोट फिरवण्याचा प्रयत्न करा"
+
+#~ msgid "Remove your finger, and try swiping your finger again"
+#~ msgstr "आपले बोट काढून टाका आणि पुन्हा आपल्या बोटाने स्वाइप करून पहा"
+
+#~ msgid "Place your finger on the reader again"
+#~ msgstr "पुन्हा वाचकवर आपले बोट ठेवा"
+
+#~ msgid "Failed to match fingerprint"
+#~ msgstr "फिंगरप्रिंट जुळविण्यात अयशस्वी"
+
+#~ msgid "Verification timed out"
+#~ msgstr "सत्यापन कालबाह्य झाले"
+
+#~ msgid "Guest session"
+#~ msgstr "अतिथी सत्र"
+
+#~ msgid "%A, %B %e"
+#~ msgstr "%A, %B %e"
+
+#~ msgid "%l:%M"
+#~ msgstr "%l:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "Suspend"
+#~ msgstr "निलंबित करा"
+
+#~ msgid "Shutdown"
+#~ msgstr "बंद करा"

@@ -1,0 +1,2 @@
+option('ubuntu-patched-gsd', type: 'boolean', value: true)
+option('gsd-dir', type: 'string', value: '')

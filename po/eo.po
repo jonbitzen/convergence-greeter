@@ -1,0 +1,161 @@
+# Esperanto translation for pantheon-greeter
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the pantheon-greeter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:30+0000\n"
+"PO-Revision-Date: 2019-11-07 10:24+0000\n"
+"Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
+"Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/"
+"greeter/eo/>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.7.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+
+#: compositor/WindowManager.vala:512
+msgid "Does the display look OK?"
+msgstr "Ĉu la ekrano aspektas bone?"
+
+#: compositor/WindowManager.vala:515
+msgid "Keep This Configuration"
+msgstr "Konservi la Agordojn"
+
+#: compositor/WindowManager.vala:516
+msgid "Restore Previous Configuration"
+msgstr "Restaŭri la Antaŭajn Agordojn"
+
+#: src/MainWindow.vala:62
+msgid "Log in as Guest"
+msgstr "Ensaluti kiel Gasto"
+
+#: src/MainWindow.vala:64
+msgid "Manual Login…"
+msgstr "Mana ensaluto…"
+
+#: src/MainWindow.vala:403
+msgid "Unable to Log In"
+msgstr "Neeblis ensaluti"
+
+#: src/MainWindow.vala:404
+msgid "Starting the session has failed."
+msgstr "Startigo de la seanco fiaskis."
+
+#: src/MainWindow.vala:466
+msgid "Unable to Launch Initial Setup"
+msgstr "Neeblis lanĉi la komencan agordadon"
+
+#: src/MainWindow.vala:471
+msgid ""
+"Initial Setup creates your first user. Without it, you will not be able to "
+"log in and may need to reinstall the OS."
+msgstr ""
+"La komenca agordo ne sukcesis krei uzanton. Sen tio, ne eblos ensaluti, kaj "
+"necesos reinstali la operaciumon."
+
+#: src/Cards/ManualCard.vala:15
+msgid "Manual Login"
+msgstr "Mana ensaluto"
+
+#: src/Cards/ManualCard.vala:22
+msgid "Username"
+msgstr "Uzantonomo"
+
+#: src/Cards/ManualCard.vala:26
+msgid "Try username"
+msgstr "Provu uzantonomon"
+
+#: src/Cards/UserCard.vala:78 src/Widgets/PasswordEntry.vala:27
+msgid "Log In"
+msgstr "Ensaluti"
+
+#: src/Cards/UserCard.vala:84
+msgid "Account disabled"
+msgstr "Konto malaktivigita"
+
+#: src/Cards/UserCard.vala:171
+msgid "Session cannot be changed while user is logged in"
+msgstr "Neeblas ŝanĝi la seancon dum estas ensalutinto"
+
+#: src/Widgets/CapsLockRevealer.vala:70
+msgid "Caps Lock & Num Lock are on"
+msgstr "Maj. Bask. & Nom. Bask. ŝaltitaj"
+
+#: src/Widgets/CapsLockRevealer.vala:72
+msgid "Caps Lock is on"
+msgstr "Maj. Bask. ŝaltita"
+
+#: src/Widgets/CapsLockRevealer.vala:74
+msgid "Num Lock is on"
+msgstr "Nom. Bask. ŝaltita"
+
+#: src/Widgets/PasswordEntry.vala:24
+msgid "Password"
+msgstr "Pasvorto"
+
+#~ msgid "Set properties of own user"
+#~ msgstr "Difini ecojn de sia uzantokonto"
+
+#~ msgid "Authentication is required to set one's own greeter properties."
+#~ msgstr "Aŭtentigo necesas por difini ies proprajn ecojn."
+
+#~ msgid "Get properties of any user"
+#~ msgstr "Vidi ies ajn ecojn"
+
+#~ msgid "Authentication is required to get another user's greeter properties."
+#~ msgstr "Aŭtentigo necesas por vidi ies proprajn ecojn."
+
+#~ msgid "Set properties of any user"
+#~ msgstr "Difini acojn de ajna uzanto"
+
+#~ msgid "Authentication is required to set another user's greeter properties."
+#~ msgstr "Aŭtentigo necesas por difini ies proprajn ecojn."
+
+#~ msgid "Swipe your finger"
+#~ msgstr "Ŝovumi vian fingron"
+
+#~ msgid "Place your finger"
+#~ msgstr "Metu vian fingron"
+
+#~ msgid "Swipe your finger again"
+#~ msgstr "Ŝovumu vian fingron denove"
+
+#~ msgid "Guest session"
+#~ msgstr "Seanco por gasto"
+
+#~ msgid "%l:%M"
+#~ msgstr "%H:%M"
+
+#~ msgid " %p"
+#~ msgstr " %p"
+
+#~ msgid "Login"
+#~ msgstr "Ensaluti"
+
+#~ msgid "Restart"
+#~ msgstr "Restartigi"
+
+#~ msgid "HighContrast"
+#~ msgstr "Alta kontrasto"
+
+#~ msgid "Onscreen Keyboard"
+#~ msgstr "Surekrana klavaro"
+
+#~ msgid "Hibernate"
+#~ msgstr "Pasivumigi"
+
+#~ msgid "Suspend"
+#~ msgstr "Halteti"
+
+#~ msgid "Shutdown"
+#~ msgstr "Elŝalti"
+
+#~ msgid "%A, %B %e%v"
+#~ msgstr "%A, la %e-a de %B"
