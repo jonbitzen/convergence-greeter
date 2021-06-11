@@ -1,0 +1,5 @@
+#!/bin/bash
+
+GREETER_PID=$(ps -efww | grep greeter | grep elementary | grep -v session | awk '{print $2}')
+
+sudo kill ${GREETER_PID}

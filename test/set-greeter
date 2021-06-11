@@ -1,0 +1,23 @@
+#!/bin/bash
+
+SLICK_GREETER_CONF="
+[Seat:*]
+greeter-session=slick-greeter
+"
+
+CONVERGENCE_GREETER_CONF="
+[Seat:*]
+greeter-session=io.elementary.greeter
+"
+
+if [ "$1" == "test" ]; then
+    GREETER_CONF=${CONVERGENCE_GREETER_CONF}
+elif [ "$1" == "slick" ]; then
+    GREETER_CONF=${SLICK_GREETER_CONF}
+else
+    echo "Unknown argument, please use one of {slick, test}"
+    exit
+fi
+
+rm -f /usr/share/lightdm/lightdm.conf.d/90-slick-greeter.conf
+printf '%s' "${GREETER_CONF}" >> /usr/share/lightdm/lightdm.conf.d/90-slick-greeter.conf

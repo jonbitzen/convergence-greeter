@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /home/jrailsback/Documents/pantheon-greeter/build
+ninja
+sudo ninja install
