@@ -29,11 +29,6 @@ public class Greeter.UserCard : Greeter.BaseCard {
     public double reveal_ratio { get; private set; default = 0.0; }
     public bool is_24h { get; set; default = true; }
 
-    public int sleep_inactive_ac_timeout { get; set; default = 1200; }
-    public int sleep_inactive_ac_type { get; set; default = 1; }
-    public int sleep_inactive_battery_timeout { get; set; default = 1200; }
-    public int sleep_inactive_battery_type { get; set; default = 1; }
-
     private Act.User act_user;
     private Gtk.Revealer form_revealer;
     private Gtk.Stack login_stack;
@@ -54,9 +49,6 @@ public class Greeter.UserCard : Greeter.BaseCard {
         password_entry = new Greeter.PasswordEntry ();
 
         this.bind_property ("connecting", password_entry, "sensitive", GLib.BindingFlags.INVERT_BOOLEAN);
-        var fingerprint_image = new Gtk.Image.from_icon_name ("fingerprint-symbolic", Gtk.IconSize.BUTTON);
-        this.bind_property ("use-fingerprint", fingerprint_image, "no-show-all", GLib.BindingFlags.INVERT_BOOLEAN | GLib.BindingFlags.SYNC_CREATE);
-        this.bind_property ("use-fingerprint", fingerprint_image, "visible", GLib.BindingFlags.SYNC_CREATE);
 
         var session_button = new Greeter.SessionButton ();
         session_button.valign = Gtk.Align.START;
@@ -67,7 +59,6 @@ public class Greeter.UserCard : Greeter.BaseCard {
         password_grid.column_spacing = 6;
         password_grid.row_spacing = 6;
         password_grid.attach (password_entry, 0, 0);
-        password_grid.attach (fingerprint_image, 1, 0);
         password_grid.attach (caps_lock_revealer, 0, 1, 2, 1);
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);

@@ -300,14 +300,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         }
 
         if (lightdm_greeter.is_authenticated) {
-            // Copy user's power settings to lightdm user
-            if (user_card != null) {
-                settings.sleep_inactive_ac_timeout = user_card.sleep_inactive_ac_timeout;
-                settings.sleep_inactive_ac_type = user_card.sleep_inactive_ac_type;
-                settings.sleep_inactive_battery_timeout = user_card.sleep_inactive_battery_timeout;
-                settings.sleep_inactive_battery_type = user_card.sleep_inactive_battery_type;
-            }
-
             var action_group = get_action_group ("session");
             try {
                 lightdm_greeter.start_session_sync (action_group.get_action_state ("select").get_string ());
