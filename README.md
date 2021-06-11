@@ -35,11 +35,15 @@ To install, use `ninja install`
 
 ## Testing & Debugging
 
+### Xephyr
+
 Run LightDM in test mode with Xephyr:
 
     lightdm --test-mode --debug
 
 You can then find the debug log in `~/.cache/lightdm/log`
+
+### VirtualBox
 
 Probably the most productive way to iterate on changes to the greeter is to run it in a virtual machine, while editing it on the host.  To do this:
 
