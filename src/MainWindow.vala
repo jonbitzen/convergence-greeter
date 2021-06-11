@@ -58,12 +58,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
 
         set_visual (get_screen ().get_rgba_visual ());
 
-        var extra_login_grid = new Gtk.Grid ();
-        extra_login_grid.halign = Gtk.Align.CENTER;
-        extra_login_grid.valign = Gtk.Align.END;
-        extra_login_grid.column_spacing = 12;
-        extra_login_grid.column_homogeneous = true;
-
         try {
             var gtksettings = Gtk.Settings.get_default ();
             gtksettings.gtk_icon_theme_name = "elementary";
@@ -86,7 +80,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         main_grid.orientation = Gtk.Orientation.VERTICAL;
         main_grid.add (datetime_widget);
         main_grid.add (main_overlay);
-        main_grid.add (extra_login_grid);
 
         add (main_grid);
 
@@ -118,9 +111,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
                 activate = go_next
             }
         };
-
-        card_size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-        card_size_group.add_widget (extra_login_grid);
 
         add_action_entries (entries, this);
 
