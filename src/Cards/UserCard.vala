@@ -69,22 +69,9 @@ public class Greeter.UserCard : Greeter.BaseCard {
         this.bind_property ("connecting", login_button, "sensitive", GLib.BindingFlags.INVERT_BOOLEAN);
         login_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var disabled_icon = new Gtk.Image.from_icon_name ("changes-prevent-symbolic", Gtk.IconSize.MENU);
-
-        var disabled_message = new Gtk.Label (_("Account disabled"));
-
-        var disabled_grid = new Gtk.Grid ();
-        disabled_grid.column_spacing = 6;
-        disabled_grid.halign = Gtk.Align.CENTER;
-        disabled_grid.margin_top = 3;
-        disabled_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-        disabled_grid.add (disabled_icon);
-        disabled_grid.add (disabled_message);
-
         login_stack = new Gtk.Stack ();
         login_stack.add_named (password_grid, "password");
         login_stack.add_named (login_button, "button");
-        login_stack.add_named (disabled_grid, "disabled");
 
         var form_grid = new Gtk.Grid ();
         form_grid.column_spacing = 6;
