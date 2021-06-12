@@ -65,13 +65,9 @@ public class Greeter.UserCard : Greeter.BaseCard {
         size_group.add_widget (password_entry);
         size_group.add_widget (session_button);
 
-        var login_button = new Gtk.Button.with_label (_("Log In"));
-        this.bind_property ("connecting", login_button, "sensitive", GLib.BindingFlags.INVERT_BOOLEAN);
-        login_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-
         login_stack = new Gtk.Stack ();
         login_stack.add_named (password_grid, "password");
-        login_stack.add_named (login_button, "button");
+        login_stack.visible_child = password_grid;
 
         var form_grid = new Gtk.Grid ();
         form_grid.column_spacing = 6;
@@ -198,15 +194,6 @@ public class Greeter.UserCard : Greeter.BaseCard {
         });
 
         password_entry.activate.connect (on_login);
-        login_button.clicked.connect (on_login);
-
-        notify["need-password"].connect (() => {
-            if (need_password) {
-                login_stack.visible_child = password_grid;
-            } else {
-                login_stack.visible_child = login_button;
-            }
-        });
 
         grab_focus.connect (() => {
             password_entry.grab_focus_without_selecting ();
