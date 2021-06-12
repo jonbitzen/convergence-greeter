@@ -193,7 +193,10 @@ public class Greeter.UserCard : Greeter.BaseCard {
             reveal_ratio = child_revealed ? 1.0 : 0.0;
         });
 
-        password_entry.activate.connect (on_login);
+        // when we hit enter the in the pw entry box, proceed to authenticate the user
+        password_entry.activate.connect(() => {
+            do_connect_username(lightdm_user.name);    
+        });
 
         grab_focus.connect (() => {
             password_entry.grab_focus_without_selecting ();
@@ -216,15 +219,6 @@ public class Greeter.UserCard : Greeter.BaseCard {
         }
     }
 
-    private void on_login () {
-        connecting = true;
-        if (need_password) {
-            do_connect (password_entry.text);
-        } else {
-            do_connect ();
-        }
-    }
-
     private void update_collapsed_class () {
         if (show_input) {
             main_grid_style_context.remove_class ("collapsed");
@@ -235,6 +229,15 @@ public class Greeter.UserCard : Greeter.BaseCard {
 
     public UserCard (LightDM.User lightdm_user) {
         Object (lightdm_user: lightdm_user);
+    }
+
+    public void on_login () {
+        connecting = true;
+        if (need_password) {
+            do_connect (password_entry.text);
+        } else {
+            do_connect ();
+        }
     }
 
     public override void wrong_credentials () {

@@ -1,5 +1,4 @@
 public class Greeter.ManualCard : Greeter.BaseCard {
-    public signal void do_connect_username (string username);
 
     private Greeter.PasswordEntry password_entry;
     private Gtk.Entry username_entry;

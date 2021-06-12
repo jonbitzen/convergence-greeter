@@ -273,23 +273,12 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         }
 
         critical ("message: `%s' (%d): %s", text, type, messagetext.to_string ());
-        /*var messagetext = string_to_messagetext(text);
-
-        if (messagetext == MessageText.FPRINT_SWIPE || messagetext == MessageText.FPRINT_PLACE) {
-            // For the fprint module, there is no prompt message from PAM.
-            send_prompt (PromptType.FPRINT);
-        }
-
-        current_login.show_message (type, messagetext, text);*/
     }
 
+    // Get the password from the card prompt
     private void show_prompt (string text, LightDM.PromptType type = LightDM.PromptType.QUESTION) {
-        critical ("prompt: `%s' (%d)", text, type);
-        /*send_prompt (lightdm_prompttype_to_prompttype(type), string_to_prompttext(text), text);
-
-        had_prompt = true;
-
-        current_login.show_prompt (type, prompttext, text);*/
+        var user_card = current_card as Greeter.UserCard;
+        user_card.on_login();
     }
 
     // Called after the credentials are checked, might be authenticated or not.
@@ -412,8 +401,12 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
             }
         });
 
-        user_card.do_connect.connect (do_connect);
+        // user card sends a signal to call the main window's user auth method
+        user_card.do_connect_username.connect(do_connect_username);
 
+        // user card sends a signal to call the main windows password submit method
+        user_card.do_connect.connect (do_connect);
+        
         card_size_group.add_widget (user_card);
         user_cards.push_tail (user_card);
     }
@@ -447,19 +440,6 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
             get_action_group ("session").activate_action ("select", new GLib.Variant.string (user_card.lightdm_user.session));
         }
 
-        if (lightdm_greeter.in_authentication) {
-            try {
-                lightdm_greeter.cancel_authentication ();
-            } catch (Error e) {
-                critical (e.message);
-            }
-        }
-
-        try {
-            lightdm_greeter.authenticate (user_card.lightdm_user.name);
-        } catch (Error e) {
-            critical (e.message);
-        }
     }
 
     private void notify_cb (GLib.Object obj, GLib.ParamSpec spec) {
@@ -493,6 +473,7 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         }
     }
 
+    // Callback to provide the user credentials to the LightDM.Greeter instance
     private void do_connect (string? credential) {
         if (credential != null) {
             try {
