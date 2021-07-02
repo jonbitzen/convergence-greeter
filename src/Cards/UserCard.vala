@@ -28,6 +28,7 @@ public class Greeter.UserCard : Greeter.BaseCard {
     public bool show_input { get; set; default = false; }
     public double reveal_ratio { get; private set; default = 0.0; }
     public bool is_24h { get; set; default = true; }
+    public bool is_nopasswd_user { get; set; default = false; }
 
     private Act.User act_user;
     private Gtk.Revealer form_revealer;
@@ -37,6 +38,8 @@ public class Greeter.UserCard : Greeter.BaseCard {
 
     construct {
         need_password = true;
+
+        is_nopasswd_user = user_in_group(lightdm_user.name, "nopasswdlogin");
 
         var username_label = new Gtk.Label (lightdm_user.display_name);
         username_label.margin = 24;
@@ -225,6 +228,34 @@ public class Greeter.UserCard : Greeter.BaseCard {
         } else {
             main_grid_style_context.add_class ("collapsed");
         }
+    }
+
+    bool user_in_group(string username, string groupname) {
+
+        FileStream stream = FileStream.open ("/etc/group", "r");
+        const int kGroupNameIndex = 0;
+        const int kGroupUsersIndex = 3;
+    
+        string[] users_in_group = {};
+        for (string? group_line = stream.read_line(); group_line != null;) {
+            group_line = stream.read_line();
+            if (group_line != null) {
+                string[] group_entries = group_line.split(":");
+                string group_name = group_entries[kGroupNameIndex];
+                if (group_name == groupname) {
+                    users_in_group = group_entries[kGroupUsersIndex].split(",");
+                }
+            }
+        }
+    
+        bool user_found = false;
+        foreach (string user_in_group in users_in_group) {
+            if (user_in_group == username) {
+                user_found = true;
+                break;
+            }
+        }
+        return user_found;
     }
 
     public UserCard (LightDM.User lightdm_user) {

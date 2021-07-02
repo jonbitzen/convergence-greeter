@@ -45,7 +45,6 @@ executable(
     'Cards/BaseCard.vala',
     'Cards/ManualCard.vala',
     'Cards/UserCard.vala',
-    'Cards/GamerCard.vala',
     'Widgets/BackgroundImage.vala',
     'Widgets/CapsLockRevealer.vala',
     'Widgets/DateTimeWidget.vala',
