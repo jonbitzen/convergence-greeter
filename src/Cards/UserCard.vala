@@ -206,6 +206,10 @@ public class Greeter.UserCard : Greeter.BaseCard {
         });
     }
 
+    public void do_no_passwdlogin_authentication() {
+        do_authentication(lightdm_user.name);
+    }
+
     private void on_act_user_loaded () {
         if (!act_user.is_loaded) {
             return;

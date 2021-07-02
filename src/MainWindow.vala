@@ -150,6 +150,11 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
                                 }
                                 return true;
                             }
+                            UserCard user_card = (UserCard) current_card;
+                            if (user_card.is_nopasswd_user && event.keyval == Gdk.Key.Return) {
+                                user_card.do_no_passwdlogin_authentication();
+                                return true;
+                            }
                         }
                     }
                 }
