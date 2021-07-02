@@ -37,9 +37,9 @@ public class Greeter.UserCard : Greeter.BaseCard {
     private Greeter.PasswordEntry password_entry;
 
     construct {
-        need_password = true;
 
         is_nopasswd_user = user_in_group(lightdm_user.name, "nopasswdlogin");
+        need_password = !is_nopasswd_user;
 
         var username_label = new Gtk.Label (lightdm_user.display_name);
         username_label.margin = 24;
@@ -68,9 +68,14 @@ public class Greeter.UserCard : Greeter.BaseCard {
         size_group.add_widget (password_entry);
         size_group.add_widget (session_button);
 
+        var no_passwd_login_label = new Gtk.Label("Press X to login");
+        no_passwd_login_label.hexpand = true;
+        no_passwd_login_label.halign = Gtk.Align.CENTER;
+        
         login_stack = new Gtk.Stack ();
         login_stack.add_named (password_grid, "password");
-        login_stack.visible_child = password_grid;
+        login_stack.add_named (no_passwd_login_label, "no_passwd_login");
+        login_stack.visible_child = no_passwd_login_label;
 
         var form_grid = new Gtk.Grid ();
         form_grid.column_spacing = 6;
@@ -221,7 +226,7 @@ public class Greeter.UserCard : Greeter.BaseCard {
             if (need_password) {
                 login_stack.visible_child_name = "password";
             } else {
-                login_stack.visible_child_name = "button";
+                login_stack.visible_child_name = "no_passwd_login";
             }
         }
     }
