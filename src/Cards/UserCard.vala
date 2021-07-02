@@ -198,7 +198,7 @@ public class Greeter.UserCard : Greeter.BaseCard {
 
         // when we hit enter the in the pw entry box, proceed to authenticate the user
         password_entry.activate.connect(() => {
-            do_connect_username(lightdm_user.name);    
+            do_authentication(lightdm_user.name);    
         });
 
         grab_focus.connect (() => {
@@ -265,9 +265,9 @@ public class Greeter.UserCard : Greeter.BaseCard {
     public void on_login () {
         connecting = true;
         if (need_password) {
-            do_connect (password_entry.text);
+            do_authorization (password_entry.text);
         } else {
-            do_connect ();
+            do_authorization ();
         }
     }
 

@@ -402,10 +402,10 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         });
 
         // user card sends a signal to call the main window's user auth method
-        user_card.do_connect_username.connect(do_connect_username);
+        user_card.do_authentication.connect(do_authentication);
 
         // user card sends a signal to call the main windows password submit method
-        user_card.do_connect.connect (do_connect);
+        user_card.do_authorization.connect (do_authorization);
         
         card_size_group.add_widget (user_card);
         user_cards.push_tail (user_card);
@@ -457,7 +457,7 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
         main_overlay.queue_allocate ();
     }
 
-    private void do_connect_username (string username) {
+    private void do_authentication (string username) {
         if (lightdm_greeter.in_authentication) {
             try {
                 lightdm_greeter.cancel_authentication ();
@@ -474,7 +474,7 @@ public class Greeter.MainWindow : Gtk.ApplicationWindow {
     }
 
     // Callback to provide the user credentials to the LightDM.Greeter instance
-    private void do_connect (string? credential) {
+    private void do_authorization (string? credential) {
         if (credential != null) {
             try {
                 lightdm_greeter.respond (credential);

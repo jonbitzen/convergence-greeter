@@ -63,7 +63,7 @@ public class Greeter.ManualCard : Greeter.BaseCard {
         bind_property ("connecting", username_entry, "sensitive", GLib.BindingFlags.INVERT_BOOLEAN);
         bind_property ("connecting", password_entry, "sensitive", GLib.BindingFlags.INVERT_BOOLEAN);
 
-        username_entry.activate.connect (() => do_connect_username (username_entry.text));
+        username_entry.activate.connect (() => do_authentication (username_entry.text));
         password_entry.activate.connect (on_login);
         grab_focus.connect (() => {
             if (username_entry.sensitive) {
@@ -76,7 +76,7 @@ public class Greeter.ManualCard : Greeter.BaseCard {
 
     private void on_login () {
         connecting = true;
-        do_connect (password_entry.text);
+        do_authorization (password_entry.text);
         password_entry.sensitive = false;
     }
 
